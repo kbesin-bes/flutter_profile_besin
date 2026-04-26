@@ -12,7 +12,7 @@ class MyProfileCard extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text(
-            'Profile Card',
+            'My Developer Profile',
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
           backgroundColor: const Color.fromARGB(255, 82, 207, 165),
@@ -55,7 +55,7 @@ class MyProfileCard extends StatelessWidget {
 
                       // Full Name (Large and Bold)
                       Text(
-                        'Besin, Kristine B.',
+                        'Besin, Kristine T.',
                         style: TextStyle(
                           fontSize: 28,
                           fontWeight: FontWeight.bold,
