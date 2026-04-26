@@ -19,7 +19,6 @@ class MyProfileCard extends StatelessWidget {
           centerTitle: true,
         ),
         body: Container(
-          // Background gradient (optional)
           decoration: BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.topLeft,
@@ -34,26 +33,22 @@ class MyProfileCard extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(20.0),
               child: Card(
-                // Ang Card nga mugawas nga morag overlay
-                elevation: 10, // Shadow effect
+                elevation: 10,
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20), // Rounded corners
+                  borderRadius: BorderRadius.circular(20),
                 ),
                 color: Colors.white,
                 child: Padding(
                   padding: const EdgeInsets.all(25.0),
                   child: Column(
-                    mainAxisSize: MainAxisSize.min, // Para mo-fit sa content
+                    mainAxisSize: MainAxisSize.min,
                     children: [
-                      // Icon Bonus
                       CircleAvatar(
                         radius: 50,
                         backgroundImage: AssetImage('images/card.jpeg'),
                         backgroundColor: Colors.deepPurple.shade100,
                       ),
                       SizedBox(height: 10),
-
-                      // Full Name (Large and Bold)
                       Text(
                         'Besin, Kristine T.',
                         style: TextStyle(
@@ -65,8 +60,6 @@ class MyProfileCard extends StatelessWidget {
                         textAlign: TextAlign.center,
                       ),
                       SizedBox(height: 5),
-
-                      // Divider line
                       Divider(
                         color: Colors.deepPurple.shade200,
                         thickness: 1.5,
@@ -74,8 +67,6 @@ class MyProfileCard extends StatelessWidget {
                         endIndent: 40,
                       ),
                       SizedBox(height: 5),
-
-                      // Section
                       Text(
                         'BSIT-3B',
                         style: TextStyle(
@@ -85,8 +76,6 @@ class MyProfileCard extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: 8),
-
-                      // Age
                       Text(
                         'Age: 24',
                         style: TextStyle(
@@ -95,8 +84,6 @@ class MyProfileCard extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: 16),
-
-                      // Top 3 Hobbies Title
                       Container(
                         padding:
                             EdgeInsets.symmetric(horizontal: 12, vertical: 6),
@@ -114,8 +101,6 @@ class MyProfileCard extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: 12),
-
-                      // Hobbies List
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -144,10 +129,7 @@ class MyProfileCard extends StatelessWidget {
                           Text('Watching Movies'),
                         ],
                       ),
-
                       SizedBox(height: 25),
-
-                      // Small footer
                       Container(
                         padding:
                             EdgeInsets.symmetric(horizontal: 16, vertical: 8),
